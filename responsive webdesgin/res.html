@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Responsive desgin</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="icon.png" class="logo">
+            <nav>
+                <ul id ="menuList">
+               <li> <a href="">Game controler</a></li>
+               <li> <a href="">Vr Accessories</a></li>
+               <li> <a href="">Media Control</a></li>
+               <li> <a href="">Other</a></li>
+            </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+    
+
+    <div class="row">
+        <div class="col-1">
+            <h2>PS4 V2<br>Dualshock 4 </h2>
+            <h3>Wireless controllor for playstation 4</h3>
+            <p>(compatible/Generic)</p>
+            <h4>$34.00</h4>
+            <button type="button">Buy Now <img src="arrow1.jfif" alt=""></button>
+        </div>
+        <div class="col-2">
+            <img src="controllor.png" class="controllor">
+            <div class="color-box"></div>
+            <div class="add-btn">
+                <img src="pluse.png">
+                <p><small>Add to cart</small></p>
+            </div>
+        </div>
+        </div>
+        <div class="social-links">
+            <img src="fb.png" id="fb">
+            <img src="twitter.png" alt="">
+    </div>
+</div>
+
+</body>
+<script>
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight =  "0px";
+    function togglemenu() {
+        if(menuList.style.maxHeight ==  "0px")  {
+            menuList.style.maxHeight =  "130px";
+        }
+        else{
+            menuList.style.maxHeight =  "0px";
+        }
+    }
+</script>
+</html>
